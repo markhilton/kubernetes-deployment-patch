@@ -6,7 +6,9 @@ Simple single bash command script to:
 3. force Kubernetes rolling deployment within selected namespace
 
 ## Assumptions
-Docker image name is the same as Kubernetes deployment name.
+1. Docker image name is the same as Kubernetes deployment name.
+2. `kubectl` is authorized to connect to Kubernetes cluster
+3. If you're using Docker private repository - you're authorized already with `docker login`
 
 ## Installation
 1. Copy `build.sh` into your executable environment $PATH.
