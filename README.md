@@ -16,7 +16,7 @@ Docker image name is the same as Kubernetes deployment name.
 cp ./build.sh /usr/local/bin/build
 ```
 
-2. Add required environment variables listed in `.env` file into your project `.env` where Dockerfile is located
+2. Add required environment variables listed in `.env` file into your project `.env` where `Dockerfile` is located
 
 *example:*
 ```
@@ -30,12 +30,12 @@ build --help
 
 *examples:*
 
-build Docker image tagged as latest & push it into Docker repository:
+build a Docker image tagged as `latest` & push it into Docker repository:
 ```
 build 
 ```
 
-build image tagged 1.0.0, push it into Docker repository and patch Kubernetes deployment to use it in production namespace:
+build a Docker image tagged as `1.0.0`, push it into Docker repository and patch Kubernetes deployment to use it in production namespace:
 ```
 build 1.0.0 PROD
 ```
